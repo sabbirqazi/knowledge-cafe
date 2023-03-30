@@ -1,6 +1,6 @@
 import React from "react";
 import './Blog.css'
-const Blog = ({ blog }) => {
+const Blog = ({ blog , handleReadTime }) => {
   const {
     id,
     blog_title,
@@ -12,16 +12,16 @@ const Blog = ({ blog }) => {
   } = blog;
   return (
     <>
-      <div className="card w-96 bg-base-100 shadow-xl">
+      <div className="card w-96 bg-base-100 my-8">
         <figure>
-          <img
+          <img className="rounded"
             src={blog_cover_image}
             alt="Shoes"
           />
         </figure>
         <div className="card-body">
          <div className="flex justify-between">
-            <div className="flex">
+            <div className="flex gap-2.5">
              <div>
                 <img className="author-img" src={author_image} alt="" />
              </div>
@@ -37,8 +37,8 @@ const Blog = ({ blog }) => {
          </div>
           <h2 className="card-title">{blog_title}</h2>
           
-          <div className="card-actions justify-end">
-            
+          <div className="">
+            <button href="" onClick={() =>{handleReadTime(blog.read_time)}}>Mark as read</button>
           </div>
         </div>
       </div>
