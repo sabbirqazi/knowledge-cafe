@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "author_name": "John Doe",
+        "blog_title": "How to increase productivity using AI",
+        "images": "",
+        "blog_cover_image": "https://img.freepik.com/free-photo/ai-technology-microchip-background-digital-transformation-concept_53876-124669.jpg?w=1380&t=st=1680196693~exp=1680197293~hmac=21a9262263b17c0631d30b62445d1ce316607f56e4ab1f73aa590f6091953a6c",
+        "author_image": "https://img.freepik.com/free-photo/confident-attractive-caucasian-guy-beige-pullon-smiling-broadly-while-standing-against-gray_176420-44508.jpg?w=1380&t=st=1680201141~exp=1680201741~hmac=abc1741a6a41453f4c73e3687b98c167acaefb6d2794dbcaf32bbb3481da64e2",
+        "read_time": 10,
+        "publish_date": "2023-03-30"
+    },
+    {
+        "id": 2,
+        "author_name": "Jane Doe",
+        "blog_title": "Your first step to learn ML(Machine Learning)",
+        "images": ["image3.jpg", "image4.jpg"],
+        "blog_cover_image": "https://img.freepik.com/free-photo/portrait-man-face-scann_23-2148878101.jpg?w=826&t=st=1680197247~exp=1680197847~hmac=0137fe6433812d259b1f03aceaabe0b1ba4c730de50dc70edd8e765e73f90830",
+        "author_image": "https://img.freepik.com/free-photo/cheerful-indian-businessman-smiling-closeup-portrait-jobs-career-campaign_53876-129417.jpg?w=1380&t=st=1680201183~exp=1680201783~hmac=528ed6dad7c2aebb0cb6a71205e9408a6904a40dc0b8c37e403c663fb48b891b",
+        "read_time": 15,
+        "publish_date": "2023-03-31"
+    },
+    {
+        "id": 3,
+        "author_name": "John Smith",
+        "blog_title": "Land your first remote job as a Software Engineer",
+        "images": ["image5.jpg", "image6.jpg"],
+        "blog_cover_image": "https://img.freepik.com/free-photo/photographer-eyeglasses-working-with-interactive-pen-display-while-looking-laptop_8353-6238.jpg?w=1380&t=st=1680197397~exp=1680197997~hmac=c459904cafe8fa1f3069cea7e43e65988e969b8ec73e751f410c23f0b30b1235",
+        "author_image": "https://img.freepik.com/free-photo/handsome-bearded-guy-posing-against-white-wall_273609-20597.jpg?w=1380&t=st=1680201225~exp=1680201825~hmac=5c17d85069447a94e45ac3ed0a50e9d492b0540cac0645278ac1f7aec44ca4ec",
+        "read_time": 20,
+        "publish_date": "2023-04-01"
+    },
+    {
+        "id": 4,
+        "author_name": "John",
+        "blog_title": "Importance of team work & get better your communication skill",
+        "images": [],
+        "blog_cover_image": "https://img.freepik.com/free-photo/mixed-programers-team-working-group-project-multiple-screens-showing-running-code-it-startup-office-coder-pointing-pencil-computer-screen-with-software-compiling-code_482257-33301.jpg?w=1380&t=st=1680197602~exp=1680198202~hmac=df1c6c76ddcb47aa94a1ac78b915fe7cbbb4c89d3a37578ce5657b6f625d50ff",
+        "author_image": "https://img.freepik.com/free-photo/portrait-hapy-young-smart-man-glasses-white-wall_231208-12206.jpg?w=740&t=st=1680201268~exp=1680201868~hmac=6c20ef896217bc085ffe4a4a3f6bb660f499624eeb52ecc6f5b8e1fabfc0cdee",
+        "read_time": 12,
+        "publish_date": "2022-04-03"
+    }
+]
