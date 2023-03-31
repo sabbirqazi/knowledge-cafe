@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react";
 import BookMark from "../BookMark/BookMark";
 import './SideBar.css'
+
 const SideBar = ({readTime,bookMarks}) => {
-    console.log(readTime)
-    let totalTime =0;
+    
+    let totalTime = 0;
      for (const time of readTime){
          totalTime = totalTime + time.read_time;
     }  

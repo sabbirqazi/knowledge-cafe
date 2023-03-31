@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import Blog from '../Blog/Blog';
 import SideBar from '../SideBar/SideBar'
 import './Home.css'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 const Home = () => {
     const [blogs, setBlogs] = useState([])
     const [readTime, setReadTime] = useState([])
@@ -13,15 +15,22 @@ const Home = () => {
     },[])
   
     const handleReadTime= (blog)=>{
+        
         const newReadTime = [...readTime, blog];
         setReadTime(newReadTime);
     }
-    console.log(readTime)
-    const handleBookMark =(blog) =>{
-    const newBookMark = [...bookMarks, blog]
-    setBookMarks(newBookMark)
 
-    }
+    const handleBookMark = (blog) => {
+        const newBookMark = [...bookMarks];
+        const blogIndex = newBookMark.findIndex((b) => b.id === blog.id);
+        if (blogIndex === -1) {
+          newBookMark.push(blog);
+          setBookMarks(newBookMark);
+        } else {
+          toast("Already added to the bookmark");  
+        }
+      };
+ 
     return (
         <>
        <div className='home-container mx-20 my-10 '>
@@ -36,6 +45,7 @@ const Home = () => {
         }
          </div>
         <div className='side-container'>
+            <ToastContainer></ToastContainer>
             <SideBar
             readTime={readTime}
             bookMarks ={bookMarks}
