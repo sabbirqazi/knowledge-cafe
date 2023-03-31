@@ -10,7 +10,7 @@ const SideBar = ({readTime,bookMarks}) => {
     }  
   return (
     <>
-      <div className="mx-20 my-8 ">
+      <div className="side-container mx-20 my-8 ">
       <div className="time-container text-center align-middle font-bold text-xl">
         <p className="text-indigo-700 mt-6">Spend time on read: {totalTime} min</p>
         

@@ -27,7 +27,7 @@ const Home = () => {
           newBookMark.push(blog);
           setBookMarks(newBookMark);
         } else {
-          toast("Already added to the bookmark");  
+          toast("You Have Already Bookmarked This Blog");  
         }
       };
  
@@ -43,6 +43,7 @@ const Home = () => {
             handleBookMark ={handleBookMark}
             ></Blog>)
         }
+        
          </div>
         <div className='side-container'>
             <ToastContainer></ToastContainer>

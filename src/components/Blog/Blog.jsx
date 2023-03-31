@@ -4,7 +4,7 @@ import "./Blog.css";
 
 const Blog = ({ blog, handleReadTime, handleBookMark }) => {
   const {
-    id,
+    tag,
     blog_title,
     author_name,
     blog_cover_image,
@@ -16,9 +16,9 @@ const Blog = ({ blog, handleReadTime, handleBookMark }) => {
 
   return (
     <>
-      <div className="card w-96 bg-base-100 my-8">
+      <div className="card w-96 bg-base-100 my-8 shadow-sm">
         <figure>
-          <img className="rounded" src={blog_cover_image} alt="Shoes" />
+          <img className="rounded" src={blog_cover_image} />
         </figure>
         <div className="card-body">
           <div className="flex justify-between">
@@ -27,12 +27,12 @@ const Blog = ({ blog, handleReadTime, handleBookMark }) => {
                 <img className="author-img" src={author_image} alt="" />
               </div>
               <div className="">
-                <h5>{author_name}</h5>
+                <h5 className="text-xl font-bold">{author_name}</h5>
                 <p>{publish_date}</p>
               </div>
             </div>
             <div className="bookmark-icon flex gap-2">
-              <p>{read_time} mins to read</p>
+              <p>{read_time} mins read</p>
               <a onClick={() => handleBookMark(blog)}>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -51,11 +51,11 @@ const Blog = ({ blog, handleReadTime, handleBookMark }) => {
               </a>
             </div>
           </div>
-          <h2 className="card-title">{blog_title}</h2>
-
+          <h2 className="card-title text-2xl font-bold">{blog_title}</h2>
+          <p>{tag}</p>
           <div className="">
             <button
-              href=""
+              
               onClick={() => {
                 handleReadTime(blog);
               }}
@@ -65,6 +65,7 @@ const Blog = ({ blog, handleReadTime, handleBookMark }) => {
           </div>
         </div>
       </div>
+      <hr className='bg-gray-200 p-0.5 rounded'/>
     </>
   );
 };
