@@ -5,6 +5,7 @@ import './Home.css'
 const Home = () => {
     const [blogs, setBlogs] = useState([])
     const [readTime, setReadTime] = useState([])
+    const [bookMarks, setBookMarks] = useState([])
     useEffect( () =>{
         fetch('data.json')
         .then(res => res.json())
@@ -15,6 +16,12 @@ const Home = () => {
         const newReadTime = [...readTime, blog];
         setReadTime(newReadTime);
     }
+    console.log(readTime)
+    const handleBookMark =(blog) =>{
+    const newBookMark = [...bookMarks, blog]
+    setBookMarks(newBookMark)
+
+    }
     return (
         <>
        <div className='home-container'>
@@ -24,12 +31,14 @@ const Home = () => {
             blog= {blog} 
             key ={blog.id} 
             handleReadTime ={handleReadTime}
+            handleBookMark ={handleBookMark}
             ></Blog>)
         }
          </div>
         <div className='side-container'>
             <SideBar
             readTime={readTime}
+            bookMarks ={bookMarks}
             ></SideBar>
         </div>
        </div>

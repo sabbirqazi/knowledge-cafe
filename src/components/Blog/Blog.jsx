@@ -1,6 +1,6 @@
 import React from "react";
 import './Blog.css'
-const Blog = ({ blog , handleReadTime }) => {
+const Blog = ({ blog , handleReadTime, handleBookMark }) => {
   const {
     id,
     blog_title,
@@ -32,13 +32,13 @@ const Blog = ({ blog , handleReadTime }) => {
             </div>
             <div className="flex">
              <p>{read_time} mins to read</p>
-             <a className="btn">Bookmark</a>
+             <a className="btn" onClick={() =>handleBookMark(blog)}>Bookmark</a>
             </div>
          </div>
           <h2 className="card-title">{blog_title}</h2>
           
           <div className="">
-            <button href="" onClick={() =>{handleReadTime(blog.read_time)}}>Mark as read</button>
+            <button href="" onClick={() =>{handleReadTime(blog)}}>Mark as read</button>
           </div>
         </div>
       </div>
