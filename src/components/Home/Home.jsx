@@ -24,8 +24,8 @@ const Home = () => {
     }
     return (
         <>
-       <div className='home-container'>
-       <div className='mx-20 mt-10 blog-container'>
+       <div className='home-container mx-20 my-10 '>
+       <div className='blog-container'>
         {
             blogs.map(blog => <Blog
             blog= {blog} 

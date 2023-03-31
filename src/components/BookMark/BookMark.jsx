@@ -4,7 +4,7 @@ const BookMark = ({bookMark}) => {
     console.log(bookMark)
     return (
         <>
-        <p>{bookMark.blog_title}</p>
+        <p className='p-5 text-xl bg-base-100 my-5 rounded font-semibold'>{bookMark.blog_title}</p>
         </>
     );
 };
