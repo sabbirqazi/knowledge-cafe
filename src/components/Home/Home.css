@@ -1,4 +1,14 @@
-.home-container{
-    display: grid;
-    grid-template-columns: 4fr 1fr;
-}
+ .home-container{
+    display: flex;
+    justify-content: space-around;
+ }
+ 
+
+ @media screen and (max-width: 576px) {
+    .home-container{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    
+ }

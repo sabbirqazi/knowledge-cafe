@@ -1,0 +1,19 @@
+.card-container{
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+    
+}
+.qna-card{ 
+    box-sizing: border-box;
+    width: 780px;
+    border: 1px solid gray;
+    border-radius: 8px; 
+}
+.qna-card img{
+    box-sizing: border-box;
+    border: 0;
+    border-radius: 10px;
+    padding: 8px;
+}

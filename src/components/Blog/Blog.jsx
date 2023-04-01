@@ -16,7 +16,7 @@ const Blog = ({ blog, handleReadTime, handleBookMark }) => {
 
   return (
     <>
-      <div className="card w-96 bg-base-100 my-8 shadow-sm">
+      <div className="card bg-base-100 my-8 shadow-sm">
         <figure>
           <img className="rounded" src={blog_cover_image} />
         </figure>
@@ -51,10 +51,10 @@ const Blog = ({ blog, handleReadTime, handleBookMark }) => {
               </a>
             </div>
           </div>
-          <h2 className="card-title text-2xl font-bold">{blog_title}</h2>
+          <h2 className="card-title text-3xl font-bold">{blog_title}</h2>
           <p>{tag}</p>
           <div className="">
-            <button
+            <button className="underline font-semibold text-xl"
               
               onClick={() => {
                 handleReadTime(blog);
@@ -65,7 +65,7 @@ const Blog = ({ blog, handleReadTime, handleBookMark }) => {
           </div>
         </div>
       </div>
-      <hr className='bg-gray-200 p-0.5 rounded'/>
+     
     </>
   );
 };

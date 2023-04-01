@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './App.css';
 import Header from './components/Header/Header';
 import Home from './components/Home/Home';
+import QnABlog from './components/QnABlog/QnABlog';
 
 const App = () => {
 
@@ -10,6 +11,7 @@ const App = () => {
     <>
       <Header></Header> 
       <Home></Home>
+      <QnABlog></QnABlog>
        </>
   );
 };

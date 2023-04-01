@@ -33,7 +33,7 @@ const Home = () => {
  
     return (
         <>
-       <div className='home-container mx-20 my-10 '>
+       <div className='home-container'>
        <div className='blog-container'>
         {
             blogs.map(blog => <Blog

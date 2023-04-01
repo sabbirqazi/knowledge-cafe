@@ -10,15 +10,15 @@ const SideBar = ({readTime,bookMarks}) => {
     }  
   return (
     <>
-      <div className="side-container mx-20 my-8 ">
-      <div className="time-container text-center align-middle font-bold text-xl">
-        <p className="text-indigo-700 mt-6">Spend time on read: {totalTime} min</p>
+      <div className="side-container my-8 ">
+      <div className="time-container ">
+        <p className="">Spend time on read: {totalTime} min</p>
         
       </div>
       
-       <div className="bookmark mt-5 bg-gray-200 p-5">
+       <div className="bookmark">
 
-       <h2 className="text-xl font-bold ">Bookmarked Blogs : {bookMarks.length}</h2>
+       <h2 className="text-2xl font-bold mt-3">Bookmarked Blogs : {bookMarks.length}</h2>
        {
           
           bookMarks.map(bookMark => <BookMark
