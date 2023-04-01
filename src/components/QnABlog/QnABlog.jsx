@@ -63,7 +63,7 @@ const QnABlog = () => {
           <img src={pic3} alt="" />
           <div>
             <h1>3.Purpose of useEffect other than fetching data.</h1>
-          <p>The useEffect in react js allows us to perform side effects in our components. The purpose of  useEffect other than fetching data is direct DOM updates, and timers. useEffect has two argument , first one is a callback function second argument is an empty array which is dependency. </p>
+          <p>The useEffect in react js allows us to perform side effects in our components. The purpose of  useEffect other than fetching data are direct DOM updates, Showing pop-up when event handler is triggered , logging user informations etc.  useEffect has two argument , first one is a callback function second argument is an empty array which is dependency. </p>
           </div>
         </div>
         <div className="qna-card">
