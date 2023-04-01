@@ -5,15 +5,28 @@
  align-items: center;
     
 }
+.two-card{
+    display: flex;
+    gap: 50px;
+}
 .qna-card{ 
     box-sizing: border-box;
-    width: 780px;
-    border: 1px solid gray;
-    border-radius: 8px; 
+    width: 680px;
+    border-radius: 12px; 
 }
 .qna-card img{
     box-sizing: border-box;
     border: 0;
     border-radius: 10px;
     padding: 8px;
+}
+@media screen and (max-width: 576px) {
+    .two-card{
+         flex-direction: column;
+
+    }
+    .qna-card{
+        width: 510px;    
+        margin-left: 10px;
+    }
 }

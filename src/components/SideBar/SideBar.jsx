@@ -18,7 +18,7 @@ const SideBar = ({readTime,bookMarks}) => {
       
        <div className="bookmark">
 
-       <h2 className="text-2xl font-bold mt-3">Bookmarked Blogs : {bookMarks.length}</h2>
+       <h2 className="text-2xl font-bold mt-1.5 p-1">Bookmarked Blogs : {bookMarks.length}</h2>
        {
           
           bookMarks.map(bookMark => <BookMark

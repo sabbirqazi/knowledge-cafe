@@ -7,13 +7,15 @@ import "./QnABlog.css";
 const QnABlog = () => {
   return (
     <>
-      <div className="card-container">
-        <div className="qna-card">
+      <h1 className="text-4xl font-bold text-center my-8 underline text-indigo-500">Blog For Interview Crackers</h1>
+      <div className="card-container my-10 gap-20">
+      <div className="two-card">
+        <div className="qna-card bg-base-100 shadow-xl">
           <img src={pic1} alt="" />
-          <h1 className="text-2xl font-bold p-5">
+          <h1 className="text-2xl font-bold px-8 py-5">
                 1.Props Vs State
                 </h1>
-          <div className="p-5">
+          <div className="p-8">
             <div className="text-2xl">
                 <h2 className="font-bold">Props:</h2>
                 <ul>
@@ -46,9 +48,9 @@ const QnABlog = () => {
             </div>
           </div>
         </div>
-        <div className="qna-card">
+        <div className="qna-card bg-base-100 shadow-xl">
           <img src={pic2} alt="" />
-          <div className="text-2xl  p-5">
+          <div className="text-2xl  p-8">
           <h1 className="text-2xl font-bold">2.How does useState work?</h1>
           <h2 className="font-bold">useState() :</h2>
           <p>useState() is a React Hook that allows us to set a state to functional component.
@@ -59,17 +61,24 @@ const QnABlog = () => {
           </p>
           </div>
         </div>
-        <div className="qna-card">
+        </div>
+        <div className="two-card">
+        <div className="qna-card bg-base-100 shadow-xl">
           <img src={pic3} alt="" />
-          <div>
-            <h1>3.Purpose of useEffect other than fetching data.</h1>
+          <div className="text-2xl  p-8">
+            <h1 className="text-2xl font-bold">3.Purpose of useEffect other than fetching data.</h1>
           <p>The useEffect in react js allows us to perform side effects in our components. The purpose of  useEffect other than fetching data are direct DOM updates, Showing pop-up when event handler is triggered , logging user informations etc.  useEffect has two argument , first one is a callback function second argument is an empty array which is dependency. </p>
           </div>
         </div>
-        <div className="qna-card">
+        <div className="qna-card bg-base-100 shadow-xl">
           <img src={pic4} alt="" />
-          <h1>1.Props Vs State</h1>
-          <p></p>
+         <div className="text-2xl  p-8">
+         <h1 className="text-2xl font-bold">4. How Does React work?</h1>
+          <p>React JS is a modern Javascript library which gives us the facility of reusable component and building user interfaces. <br />
+          React uses the DOM and make copy of it and uses it when we change any updates on our code which is called virtual DOM. React virtual DOM converted our code into real DOM ,to make it happen react use DIFF Algorithm.To build UI in react we use JSX(Javascript XML), JSX is simply syntactic sugar for creating very specific JavaScript objects.
+          ReactDOM render it with the help of diff Algorithm virtual DOM to real DOM when any changes occurs.</p>
+         </div>
+        </div>
         </div>
       </div>
     </>
