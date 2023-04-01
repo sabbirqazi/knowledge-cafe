@@ -1,3 +1,7 @@
+.side-container{
+    position: sticky;
+    top: 20px;
+}
 .time-container{
     width: 411px;
     height: 88px;
